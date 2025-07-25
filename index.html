@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find clear reviews for addresses with ClearCrib">
+    <title>ClearCrib</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%232a9fd6' d='M8 0L0 6v10h5V10h6v6h5V6L8 0z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="home-icon" aria-hidden="true">🏠</span>
+            <span class="logo">ClearCrib</span>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-right">
+            <li><a href="#">Browse Reviews</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#" class="add-review">Add Review</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Area -->
+    <main class="search-area">
+        <div class="search-container" role="search">
+            <input type="text" id="searchInput" aria-label="Address search" placeholder="Search for an address…" autocomplete="off">
+            <button id="clearBtn" aria-label="Clear search">&times;</button>
+            <button id="locateBtn" aria-label="Use my location">📍</button>
+            <ul id="suggestions" role="listbox" aria-label="Address suggestions"></ul>
+        </div>
+        <div class="popular">
+            <span>Popular Locations:</span>
+            <button class="chip">123 Main St, Seattle</button>
+            <button class="chip">456 Park Ave, NY</button>
+            <button class="chip">789 Elm Rd, Austin</button>
+        </div>
+        <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
